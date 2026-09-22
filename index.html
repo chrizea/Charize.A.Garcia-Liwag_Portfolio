@@ -1,44 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Charize Garcia-Liwag | Portfolio</title>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Charize Garcia-Liwag | General VA Portfolio</title>
 <style>
-:root{--navy:#143B8F;--blue:#2563EB;--soft:#EEF6FF;--bg:#F7FAFD;--text:#1F355C}
-*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
-body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
-nav{position:sticky;top:0;background:#fff;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 10px 30px rgba(0,0,0,.06);z-index:99}
-.brand{font-size:30px;font-weight:800;color:var(--navy)}.brand small{display:block;font-size:11px;letter-spacing:3px;color:#6B7EA8}
-nav ul{display:flex;gap:22px;list-style:none}nav a{text-decoration:none;color:#496284;font-size:14px}
-.btn{background:var(--blue);color:#fff;padding:11px 18px;border-radius:999px;text-decoration:none;font-weight:700}
-.hero{padding:70px 7%;background:linear-gradient(135deg,#EEF6FF,#D8E9FF)}
-.wrap{max-width:1180px;margin:auto}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
-.badge{display:inline-block;background:#D9E9FF;color:var(--blue);padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700}
-.script{font-family:"Brush Script MT",cursive;font-size:36px;color:var(--blue);margin-top:12px}
-h1{font-size:56px;line-height:1.05;margin:6px 0 14px}.sub{color:var(--blue);font-weight:700;font-size:20px;margin-bottom:18px}
-.contact{display:flex;flex-wrap:wrap;gap:16px;margin-top:20px;font-size:14px;color:#4F6A93}
-.photo{position:relative;display:flex;justify-content:center}.blob{position:absolute;width:360px;height:360px;background:#BFD7FF;border-radius:58% 42% 41% 59%/45% 58% 42% 55%;top:20px}
-.photo img{position:relative;width:380px;border-radius:28px;box-shadow:0 28px 60px rgba(37,99,235,.22)}
-section{padding:58px 7%}.title{font-size:32px;margin-bottom:22px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.card{background:#fff;border-radius:24px;padding:22px;box-shadow:0 12px 28px rgba(0,0,0,.07)}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}.stat{background:var(--soft);border-radius:18px;padding:18px;text-align:center}.stat h3{font-size:30px;color:var(--blue)}
-.mock{height:170px;background:linear-gradient(135deg,#F9FCFF,#E8F2FF);border-radius:16px;padding:14px;margin-bottom:14px}
-.chart{display:flex;align-items:flex-end;height:86px;gap:8px;margin-top:18px}.bar{flex:1;background:#3B82F6;border-radius:8px 8px 0 0}
-table{width:100%;border-collapse:collapse;font-size:11px}th,td{border:1px solid #D9E6FA;padding:4px}th{background:#EDF5FF}
-.timeline{border-left:3px solid var(--blue);padding-left:22px}.job{position:relative;margin-bottom:30px}.job:before{content:"";position:absolute;left:-31px;top:8px;width:14px;height:14px;background:var(--blue);border-radius:50%}
-.skill{margin:16px 0}.track{height:8px;background:#DCE8FB;border-radius:99px}.fill{height:100%;background:var(--blue);border-radius:99px}
-footer{background:var(--navy);color:#fff;padding:34px;text-align:center}
-@media(max-width:780px){nav ul{display:none}.hero-grid{grid-template-columns:1fr}h1{font-size:40px}.stats{grid-template-columns:repeat(2,1fr)}.photo img{width:300px}.blob{width:290px;height:290px}}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#1f2937}
+.hero{background:linear-gradient(135deg,#1d4ed8,#2563eb);color:#fff;padding:70px 20px}
+.wrap{max-width:1080px;margin:auto}.grid{display:grid;grid-template-columns:1.5fr .8fr;gap:30px;align-items:center}
+.avatar{width:190px;height:190px;border-radius:50%;overflow:hidden;border:6px solid #fff;box-shadow:0 10px 30px rgba(0,0,0,.25);margin:auto}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.btn{display:inline-block;margin-top:20px;background:#fff;color:#1d4ed8;padding:12px 18px;border-radius:30px;text-decoration:none;font-weight:bold}
+section{padding:48px 20px}.card{background:#fff;border-radius:16px;padding:22px;box-shadow:0 8px 22px rgba(0,0,0,.08)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}table{width:100%;border-collapse:collapse}th,td{border:1px solid #e5e7eb;padding:8px}th{background:#2563eb;color:#fff}
+@media(max-width:760px){.grid{grid-template-columns:1fr;text-align:center}}
 </style></head>
 <body>
-<nav><div class="brand">Charize<small>A.<small>GARCIA-LIWAG</small></div><ul><li><a href="#about">About</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li></ul><a class="btn" href="resume/Charize_GarciaLiwag_Resume.pdf" target="_blank">Resume</a></nav>
-<header class="hero"><div class="wrap hero-grid"><div><div class="badge">GENERAL VIRTUAL ASSISTANT</div><div class="script">Hello, I'm</div><h1>Charize Garcia-Liwag</h1><div class="sub">Bookkeeping • Workforce Management • Operations & Administrative Support</div><p>18+ years supporting business operations through reporting, customer service, workforce management, documentation, and executive coordination.</p><div class="contact"><span>📧 garcia.liwag@gmail.com</span><span>📞 +63 917 731 2431</span><span>📍 Batangas, PH</span></div></div><div class="photo"><div class="blob"></div><img src="images/profile.png" alt="Charize"></div></div></header>
-<section id="about"><div class="wrap"><h2 class="title">About Me</h2><div class="card"><p>Detail-oriented Workforce Management and Operations professional with expertise in KPI reporting, Excel dashboards, schedule coordination, customer onboarding, documentation, and process improvement. My experience aligns well with General Virtual Assistant, Executive Assistant, Operations Assistant, and Bookkeeping Support roles.</p><div class="stats"><div class="stat"><h3>18+</h3><small>Years</small></div><div class="stat"><h3>5K</h3><small>Agents</small></div><div class="stat"><h3>NCIII</h3><small>Bookkeeping</small></div><div class="stat"><h3>100%</h3><small>Remote Ready</small></div></div></div></div></section>
-<section id="portfolio"><div class="wrap"><h2 class="title">Featured Portfolio</h2><div class="grid"><div class="card"><div class="mock"><b>Executive KPI Dashboard</b><div class="chart"><div class="bar" style="height:62%"></div><div class="bar" style="height:92%"></div><div class="bar" style="height:75%"></div><div class="bar" style="height:88%"></div></div></div><h3>Leadership Reporting</h3><p>Daily SLA, attendance, adherence, and productivity reporting.</p></div><div class="card"><div class="mock"><b>Staffing Planner</b><table><tr><th>Agent</th><th>Shift</th></tr><tr><td>Anna</td><td>9–6</td></tr><tr><td>John</td><td>8–5</td></tr><tr><td>Mia</td><td>OFF</td></tr></table></div><h3>Schedule Tracker</h3><p>Google Sheets workforce planning and leave coordination.</p></div><div class="card"><div class="mock"><b>Incident Log</b><table><tr><th>Time</th><th>Status</th></tr><tr><td>09:10</td><td>Resolved</td></tr><tr><td>10:25</td><td>Escalated</td></tr><tr><td>11:40</td><td>Monitoring</td></tr></table></div><h3>Real-Time Operations</h3><p>Escalation handling, documentation, and stakeholder updates.</p></div><div class="card"><div class="mock"><b>CRM Pipeline</b><table><tr><th>Client</th><th>Status</th></tr><tr><td>Sarah</td><td>Confirmed</td></tr><tr><td>David</td><td>Pending</td></tr><tr><td>Emma</td><td>Scheduled</td></tr></table></div><h3>Customer Onboarding</h3><p>Application tracking and installation coordination.</p></div><div class="card"><div class="mock" style="display:flex;align-items:center;justify-content:center;font-weight:700">Raw Data → Power Query → Dashboard</div><h3>Automation Workflow</h3><p>Saved 15–20 minutes per report through reporting automation.</p></div><div class="card"><div class="mock"><b>Meeting Minutes</b><ul style="font-size:11px;padding-left:16px;margin-top:8px"><li>Action items</li><li>Staffing update</li><li>Client follow-ups</li><li>Deadlines</li></ul></div><h3>Executive Documentation</h3><p>Professional meeting minutes with action tracking.</p></div></div></div></section>
-<section id="experience"><div class="wrap"><h2 class="title">Experience Timeline</h2><div class="timeline"><div class="job"><h3>Real-Time Analyst</h3><b>DME Service Solutions</b><p>2023–2026</p><p>Real-time monitoring, KPI dashboards, RCA analysis, staffing recovery, and reporting automation.</p></div><div class="job"><h3>Workforce Management Supervisor</h3><b>Concentrix (Intuit QuickBooks)</b><p>2018–2023</p><p>Led RTAs, managed KPIs, executive reporting, coaching, and cross-site operations.</p></div><div class="job"><h3>Technical Support Representative</h3><b>Intuit QuickBooks</b><p>2015–2018</p><p>Supported accountants and small businesses using QuickBooks and ProConnect.</p></div><div class="job"><h3>Sales Representative</h3><b>Virgin Media UK</b><p>Customer onboarding, CRM updates, telecom sales, and installation coordination.</p></div></div></div></section>
-<section id="skills"><div class="wrap"><h2 class="title">Core Skills</h2><div class="card"><div class="skill"><p>Microsoft Excel</p><div class="track"><div class="fill" style="width:95%"></div></div></div><div class="skill"><p>Google Sheets</p><div class="track"><div class="fill" style="width:90%"></div></div></div><div class="skill"><p>Power Query</p><div class="track"><div class="fill" style="width:90%"></div></div></div><div class="skill"><p>QuickBooks</p><div class="track"><div class="fill" style="width:85%"></div></div></div><div class="skill"><p>Administrative Support</p><div class="track"><div class="fill" style="width:95%"></div></div></div></div></div></section>
-<section id="contact"><div class="wrap"><h2 class="title">Let's Work Together</h2><div class="grid"><div class="card"><h3>📧 Email</h3><p>garcia.liwag@gmail.com</p></div><div class="card"><h3>📞 Phone</h3><p>+63 917 731 2431</p></div><div class="card"><h3>📍 Location</h3><p>San Nicolas, Batangas, Philippines</p></div></div></div></section>
-<footer><h2>Charize Garcia-Liwag</h2><p>General Virtual Assistant • Operations • Bookkeeping • Administrative Support</p></footer>
+<header class="hero"><div class="wrap grid"><div>
+<div style="display:inline-block;background:#ffffff22;padding:8px 14px;border-radius:999px;font-size:13px">GENERAL VIRTUAL ASSISTANT</div>
+<h1 style="font-size:44px;margin:14px 0 10px">Charize Garcia-Liwag</h1>
+<p>Bookkeeping • Accounting Admin • Data & Operations Support</p>
+<p>18+ years of experience in workforce management, customer service, reporting, documentation, and administrative coordination.</p>
+<a class="btn" href="#portfolio">View Portfolio</a>
+</div>
+<div class="avatar"><img src="profile.png" alt="Charize Garcia-Liwag"></div></div></header>
+<section><div class="wrap"><h2>About Me</h2><div class="card">
+<p>Detail-oriented operations and workforce management professional with experience building dashboards, trackers, reports, and automated Excel processes. I help businesses stay organized through accurate documentation, scheduling, reporting, and customer support.</p>
+</div></div></section>
+<section id="portfolio"><div class="wrap"><h2>Portfolio Sample Work</h2><div class="cards">
+<div class="card"><h3>Executive KPI Dashboard</h3><table><tr><th>Metric</th><th>Value</th></tr><tr><td>Service Level</td><td>89%</td></tr><tr><td>Attendance</td><td>96%</td></tr><tr><td>Adherence</td><td>94%</td></tr></table></div>
+<div class="card"><h3>Schedule & Staffing Tracker</h3><table><tr><th>Agent</th><th>Shift</th></tr><tr><td>Anna</td><td>9–6</td></tr><tr><td>John</td><td>8–5</td></tr><tr><td>Mia</td><td>OFF</td></tr></table></div>
+<div class="card"><h3>Real-Time Incident Log</h3><table><tr><th>Time</th><th>Status</th></tr><tr><td>09:10</td><td>Resolved</td></tr><tr><td>10:25</td><td>Escalated</td></tr><tr><td>11:40</td><td>Monitoring</td></tr></table></div>
+<div class="card"><h3>Customer Onboarding Tracker</h3><table><tr><th>Customer</th><th>Status</th></tr><tr><td>Sarah J.</td><td>Confirmed</td></tr><tr><td>David L.</td><td>Pending</td></tr><tr><td>Emma R.</td><td>Scheduled</td></tr></table></div>
+</div></div></section>
+<footer style="text-align:center;padding:30px;color:#64748b">© 2026 Charize Garcia-Liwag • General Virtual Assistant Portfolio</footer>
 </body></html>
