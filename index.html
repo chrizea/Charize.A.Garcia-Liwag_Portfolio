@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,87 +6,212 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Charize Garcia-Liwag | General Virtual Assistant</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,Helvetica,sans-serif;background:#eef5ff;color:#16325c}
-nav{
- position:sticky;top:0;background:white;padding:16px 8%;
- display:flex;justify-content:space-between;align-items:center;
- box-shadow:0 2px 10px rgba(0,0,0,.08)
+html{scroll-behavior:smooth}
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#F4F8FD;
+color:#17335C;
+line-height:1.6;
 }
-.logo{font-size:28px;font-weight:bold;color:#1d4ed8}
-nav a{margin-left:18px;text-decoration:none;color:#234;font-size:14px}
-.resume-btn{
- background:#1d4ed8;color:white;padding:10px 18px;
- border-radius:30px;text-decoration:none
+nav{
+position:sticky;
+top:0;
+background:white;
+padding:18px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 3px 15px rgba(0,0,0,.06);
+z-index:999;
+}
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#2457D6;
+}
+.logo span{
+font-size:14px;
+letter-spacing:2px;
+color:#526B96;
+}
+nav ul{
+display:flex;
+gap:22px;
+list-style:none;
+}
+nav a{
+text-decoration:none;
+color:#35507C;
+font-size:14px;
+}
+.btn{
+background:#2457D6;
+color:white;
+padding:11px 18px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
 }
 .hero{
- background:linear-gradient(135deg,#eef6ff,#dbeafe);
- padding:60px 8%
+background:linear-gradient(135deg,#EEF6FF,#DDEBFF);
+padding:70px 7%;
 }
-.container{max-width:1180px;margin:auto}
+.container{max-width:1200px;margin:auto}
 .hero-grid{
- display:grid;
- grid-template-columns:1.2fr .8fr;
- gap:40px;
- align-items:center
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:50px;
+align-items:center;
 }
 .badge{
- display:inline-block;
- background:#dbeafe;
- color:#1d4ed8;
- padding:8px 14px;
- border-radius:999px;
- font-size:12px;
- font-weight:bold
+display:inline-block;
+background:#D8E9FF;
+color:#2457D6;
+padding:8px 14px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
 }
-h1{font-size:52px;margin:16px 0}
+h1{
+font-size:56px;
+line-height:1.1;
+margin:18px 0;
+}
 .subtitle{
- color:#1d4ed8;
- font-weight:bold;
- margin-bottom:18px
+font-size:20px;
+color:#2457D6;
+font-weight:bold;
+margin-bottom:18px;
 }
-.profile{
- width:100%;
- max-width:380px;
- border-radius:28px;
- box-shadow:0 20px 40px rgba(29,78,216,.18)
+.hero p{margin-bottom:12px}
+.contact{
+display:flex;
+flex-wrap:wrap;
+gap:18px;
+margin-top:18px;
+font-size:14px;
 }
-section{padding:48px 8%}
-.cards{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
- gap:18px
+.hero-photo img{
+width:100%;
+max-width:420px;
+border-radius:28px;
+box-shadow:0 25px 50px rgba(36,87,214,.18);
+}
+.section{
+padding:55px 7%;
+}
+.title{
+font-size:32px;
+margin-bottom:25px;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
 }
 .card{
- background:white;
- padding:20px;
- border-radius:18px;
- box-shadow:0 8px 22px rgba(0,0,0,.08)
+background:white;
+border-radius:20px;
+padding:22px;
+box-shadow:0 8px 24px rgba(0,0,0,.08);
 }
-.kpis{
- display:grid;
- grid-template-columns:repeat(4,1fr);
- gap:12px
+.kpi-wrap{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+margin-top:15px;
 }
 .kpi{
- background:#eff6ff;
- border-radius:14px;
- padding:16px;
- text-align:center
+background:#EEF5FF;
+padding:18px;
+text-align:center;
+border-radius:16px;
 }
-.bar{height:8px;background:#dbeafe;border-radius:99px}
-.fill{height:100%;background:#2563eb;border-radius:99px}
+.kpi h3{
+font-size:30px;
+color:#2457D6;
+}
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+.mock{
+height:170px;
+background:linear-gradient(135deg,#F6FAFF,#E6F0FF);
+border-radius:14px;
+padding:14px;
+margin-bottom:16px;
+}
+.chart{
+display:flex;
+align-items:flex-end;
+gap:8px;
+height:80px;
+margin-top:20px;
+}
+.bar{
+width:20%;
+background:#3B82F6;
+border-radius:8px 8px 0 0;
+}
+.table{
+width:100%;
+font-size:11px;
+border-collapse:collapse;
+}
+.table td,.table th{
+border:1px solid #DCE7F7;
+padding:4px;
+}
+.skill{
+margin:16px 0;
+}
+.progress{
+height:8px;
+background:#DCE8F9;
+border-radius:20px;
+overflow:hidden;
+}
+.progress div{
+height:100%;
+background:#2563EB;
+}
+.timeline{
+border-left:3px solid #2563EB;
+padding-left:22px;
+}
+.job{
+margin-bottom:28px;
+position:relative;
+}
+.job:before{
+content:'';
+position:absolute;
+left:-31px;
+top:6px;
+width:14px;
+height:14px;
+background:#2563EB;
+border-radius:50%;
+}
 footer{
- background:#0f2d63;
- color:white;
- text-align:center;
- padding:28px
+background:#123C8C;
+color:white;
+padding:30px;
+text-align:center;
+margin-top:40px;
 }
 @media(max-width:768px){
- .hero-grid{grid-template-columns:1fr}
- .kpis{grid-template-columns:repeat(2,1fr)}
- h1{font-size:38px}
+.hero-grid{grid-template-columns:1fr}
+.kpi-wrap{grid-template-columns:repeat(2,1fr)}
+nav ul{display:none}
+h1{font-size:40px}
 }
 </style>
 </head>
@@ -93,15 +219,19 @@ footer{
 <body>
 
 <nav>
-<div class="logo">Charize</div>
+<div class="logo">Charize <span>GARCIA-LIWAG</span></div>
 
-<div>
-<a href="#about">About</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#experience">Experience</a>
-<a href="#skills">Skills</a>
-<a class="resume-btn" href="resume/Charize_GarciaLiwag_Resume.pdf">Download Resume</a>
-</div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<a class="btn" href="resume/Charize_GarciaLiwag_Resume.pdf" target="_blank">
+Download Resume
+</a>
 </nav>
 
 <header class="hero">
@@ -117,140 +247,249 @@ Bookkeeping • Accounting Admin • Data & Operations Support
 </div>
 
 <p>
-Detail-oriented and reliable professional with 18+ years of experience in workforce management, customer service, reporting, documentation, and administrative support. Currently transitioning into bookkeeping and accounting support.
+Detail-oriented and reliable professional with 18+ years of experience supporting operations, workforce management, customer service, reporting, and administrative coordination.
 </p>
 
-<p style="margin-top:18px">
-📞 +63 917 731 2431<br>
-✉️ garcia.liwag@gmail.com<br>
-📍 San Nicolas, Batangas, Philippines
-</p>
-
+<div class="contact">
+<div>📞 +63 917 731 2431</div>
+<div>✉️ garcia.liwag@gmail.com</div>
+<div>📍 San Nicolas, Batangas</div>
+</div>
 </div>
 
-<div style="text-align:center">
-<img src="images/profile.png" class="profile" alt="Charize Garcia-Liwag">
+<div class="hero-photo">
+<img src="images/profile.png" alt="Charize Garcia-Liwag">
 </div>
 
 </div>
 </header>
 
-<section id="about">
-<h2>About Me</h2>
+<section class="section" id="about">
+<div class="container">
 
-<div class="cards">
-<div class="card" style="grid-column:span 2">
+<h2 class="title">About Me</h2>
+
+<div class="grid">
+
+<div class="card" style="grid-column:span 2;">
 <p>
-I help businesses stay organized through KPI reporting, Excel dashboards, schedule coordination, customer onboarding, documentation, and process improvement using Microsoft Excel, Google Sheets, Power Query, and QuickBooks.
+I help businesses stay organized through KPI reporting, scheduling, documentation, customer support, Excel dashboards, and process improvement. My experience spans Workforce Management, QuickBooks customer support, reporting automation, and administrative operations.
 </p>
 </div>
 
 <div class="card">
 <h3>Key Highlights</h3>
 
-<div class="kpis">
-<div class="kpi"><b>18+</b><br>Years</div>
-<div class="kpi"><b>5,000</b><br>Agents</div>
-<div class="kpi"><b>NCIII</b><br>Bookkeeping</div>
-<div class="kpi"><b>Remote</b><br>Ready</div>
+<div class="kpi-wrap">
+<div class="kpi">
+<h3>18+</h3>
+<small>Years</small>
+</div>
+
+<div class="kpi">
+<h3>5K</h3>
+<small>Agents</small>
+</div>
+
+<div class="kpi">
+<h3>NCIII</h3>
+<small>Bookkeeping</small>
+</div>
+
+<div class="kpi">
+<h3>Remote</h3>
+<small>Ready</small>
+</div>
+</div>
 </div>
 
 </div>
 </div>
 </section>
 
-<section id="portfolio">
-<h2>Portfolio Sample Work</h2>
+<section class="section" id="portfolio">
+<div class="container">
 
-<div class="cards">
+<h2 class="title">Portfolio Sample Work</h2>
+
+<div class="portfolio">
 
 <div class="card">
+<div class="mock">
+<b>Executive KPI Dashboard</b>
+<div class="chart">
+<div class="bar" style="height:65%"></div>
+<div class="bar" style="height:90%"></div>
+<div class="bar" style="height:78%"></div>
+<div class="bar" style="height:95%"></div>
+</div>
+</div>
 <h3>Executive KPI Dashboard</h3>
-<p>Daily leadership dashboard for SLA, attendance, adherence, and productivity reporting.</p>
+<p>Daily leadership reporting for SLA, attendance, adherence, and productivity.</p>
 </div>
 
 <div class="card">
+<div class="mock">
+<b>Staffing Tracker</b>
+<table class="table">
+<tr><th>Agent</th><th>Shift</th></tr>
+<tr><td>Anna</td><td>9-6</td></tr>
+<tr><td>John</td><td>8-5</td></tr>
+<tr><td>Mia</td><td>OFF</td></tr>
+</table>
+</div>
 <h3>Schedule & Staffing Tracker</h3>
-<p>Google Sheets planner for workforce coverage, leave management, and scheduling.</p>
+<p>Google Sheets planner for workforce scheduling and leave management.</p>
 </div>
 
 <div class="card">
+<div class="mock">
+<b>Incident Log</b>
+<table class="table">
+<tr><th>Time</th><th>Status</th></tr>
+<tr><td>09:10</td><td>Resolved</td></tr>
+<tr><td>10:25</td><td>Escalated</td></tr>
+<tr><td>11:40</td><td>Monitoring</td></tr>
+</table>
+</div>
 <h3>Real-Time Incident Log</h3>
-<p>Operational issue tracker with escalations, resolutions, and stakeholder updates.</p>
+<p>Tracked operational issues, escalations, and stakeholder updates.</p>
 </div>
 
 <div class="card">
+<div class="mock">
+<b>CRM Pipeline</b>
+<table class="table">
+<tr><th>Client</th><th>Status</th></tr>
+<tr><td>Sarah</td><td>Confirmed</td></tr>
+<tr><td>David</td><td>Pending</td></tr>
+<tr><td>Emma</td><td>Scheduled</td></tr>
+</table>
+</div>
 <h3>Customer Onboarding Tracker</h3>
-<p>CRM workflow for customer applications, verification, and installation coordination.</p>
+<p>CRM workflow for customer applications and installation coordination.</p>
 </div>
 
 <div class="card">
+<div class="mock" style="display:flex;justify-content:center;align-items:center;font-size:14px;font-weight:bold;">
+Raw Data → Power Query → Dashboard
+</div>
 <h3>Automated Reporting Workflow</h3>
-<p>Power Query automation reducing manual reporting time by approximately 15–20 minutes.</p>
+<p>Reduced manual reporting time by approximately 15–20 minutes using Power Query.</p>
 </div>
 
 <div class="card">
+<div class="mock">
+<b>Meeting Minutes</b>
+<ul style="font-size:11px;margin-top:8px;padding-left:16px;">
+<li>Staffing update</li>
+<li>Action items</li>
+<li>Follow-ups</li>
+<li>Stakeholder notes</li>
+</ul>
+</div>
 <h3>Meeting Minutes & Action Tracker</h3>
-<p>Executive documentation with action items, deadlines, and stakeholder follow-ups.</p>
+<p>Executive documentation with organized action items and deadlines.</p>
 </div>
 
+</div>
 </div>
 </section>
 
-<section id="experience">
-<h2>Professional Experience</h2>
+<section class="section" id="experience">
+<div class="container">
 
-<div class="cards">
+<h2 class="title">Professional Experience</h2>
 
-<div class="card">
+<div class="timeline">
+
+<div class="job">
 <h3>Real-Time Analyst</h3>
-<p>DME Service Solutions</p>
-<small>2023–2026</small>
+<b>DME Service Solutions</b>
+<p>2023 – 2026</p>
+<p>Real-time monitoring, KPI dashboards, RCA analysis, reporting automation, staffing recovery.</p>
 </div>
 
-<div class="card">
+<div class="job">
 <h3>Workforce Management Supervisor</h3>
-<p>Concentrix (Intuit QuickBooks)</p>
-<small>2018–2023</small>
+<b>Concentrix (Intuit QuickBooks)</b>
+<p>2018 – 2023</p>
+<p>Led RTAs, managed cross-site staffing, executive reporting, coaching, and SLA performance.</p>
 </div>
 
-<div class="card">
-<h3>Technical Support</h3>
-<p>Intuit QuickBooks</p>
-<small>2015–2018</small>
+<div class="job">
+<h3>Technical Support Representative</h3>
+<b>Intuit QuickBooks</b>
+<p>2015 – 2018</p>
+<p>Supported accountants and small businesses using QuickBooks and ProConnect.</p>
 </div>
 
-<div class="card">
+<div class="job">
 <h3>Sales Representative</h3>
-<p>Virgin Media UK</p>
+<b>Virgin Media UK</b>
+<p>Customer onboarding, CRM updates, telecom sales, and installation coordination.</p>
 </div>
 
+</div>
 </div>
 </section>
 
-<section id="skills">
-<h2>Core Skills</h2>
+<section class="section" id="skills">
+<div class="container">
+
+<h2 class="title">Core Skills</h2>
 
 <div class="card">
 
 <p>Microsoft Excel</p>
-<div class="bar"><div class="fill" style="width:95%"></div></div><br>
+<div class="progress"><div style="width:95%"></div></div>
 
-<p>Google Sheets</p>
-<div class="bar"><div class="fill" style="width:90%"></div></div><br>
+<p style="margin-top:16px;">Google Sheets</p>
+<div class="progress"><div style="width:90%"></div></div>
 
-<p>QuickBooks</p>
-<div class="bar"><div class="fill" style="width:85%"></div></div><br>
+<p style="margin-top:16px;">QuickBooks</p>
+<div class="progress"><div style="width:85%"></div></div>
 
-<p>Administrative Support</p>
-<div class="bar"><div class="fill" style="width:95%"></div></div>
+<p style="margin-top:16px;">Power Query</p>
+<div class="progress"><div style="width:90%"></div></div>
+
+<p style="margin-top:16px;">Administrative Support</p>
+<div class="progress"><div style="width:95%"></div></div>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<div class="container">
+
+<h2 class="title">Let's Connect</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>📧 Email</h3>
+<p>garcia.liwag@gmail.com</p>
+</div>
+
+<div class="card">
+<h3>📞 Phone</h3>
+<p>+63 917 731 2431</p>
+</div>
+
+<div class="card">
+<h3>📍 Location</h3>
+<p>San Nicolas, Batangas, Philippines</p>
+</div>
+
+</div>
 
 </div>
 </section>
 
 <footer>
 <h3>Charize Garcia-Liwag</h3>
-<p>General Virtual Assistant Portfolio</p>
+<p>General Virtual Assistant • Operations • Bookkeeping • Administrative Support</p>
 </footer>
 
 </body>
